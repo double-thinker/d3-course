@@ -1,0 +1,201 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="github.css">
+        <link rel="stylesheet" href="bower_components/reveal.js/css/reveal.css">
+        <link rel="stylesheet" href="bower_components/reveal.js/css/theme/white.css">
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                
+                
+<section data-markdown  data-separator="^\n\^\^\n$" data-separator-vertical="^\^\n$">
+<script type="text/template">
+# Don't copypaste D3: the course
+
+^
+
+- Aplicado (hands-on)  <!-- .element: class="fragment" data-fragment-index="1" -->
+- No es un cúmulo de ejemplos <!-- .element: class="fragment" data-fragment-index="2" -->
+    - *Para eso existe internet*: [bl.ocks.org](http://bl.ocks.org/)
+- Se trata de tener autonomía al hacer visualizaciones<!-- .element: class="fragment" data-fragment-index="3" -->
+    - Al acabar entenderéis ~100% de las líneas de código de D3 de cualquier ejemplo <!-- .element: class="fragment" data-fragment-index="4" -->
+    
+**Ojalá** <!-- .element: class="fragment" data-fragment-index="5" -->
+
+^^
+
+# Algunos highlights
+
+d3 NO es una librería de visualización en el sentido tradicional <!-- .element: class="fragment" data-fragment-index="1" -->
+
+Es una herramienta de manipulación de documentos (¿?)<!-- .element: class="fragment" data-fragment-index="4" -->
+</script>
+</section>
+        
+                <section>
+                    <section data-markdown  data-separator="^\n\^\^\n$" data-separator-vertical="^\^\n$">
+<script type="text/template">
+                ## ¿Qué es un documento?
+                        </script>
+    </section>
+                    <section>
+                        
+                   <img data-src="dom.png" />
+                    </section>
+                    
+                      
+<section data-markdown  data-separator="^\n\^\^\n$" data-separator-vertical="^\^\n$">
+<script type="text/template">
+
+### Document Object Model  
+- Jerárquico (es un árbol) <!-- .element: class="fragment" data-fragment-index="1" -->
+- Core concepts: tag, attr y value <!-- .element: class="fragment" data-fragment-index="2" -->
+
+
+^^
+
+
+
+```
+<tag attr="value">text</tag> 
+```
+
+^^
+
+d3:
+- Manipula elementos del DOM
+    - Añade <!-- .element: class="fragment" data-fragment-index="1" -->
+    - Elimina <!-- .element: class="fragment" data-fragment-index="1" -->
+    - Actualiza <!-- .element: class="fragment" data-fragment-index="1" -->
+    - Cambia atributos <!-- .element: class="fragment" data-fragment-index="1" -->
+    
+**¡¡Orientado con datos!!** <!-- .element: class="fragment" data-fragment-index="2" -->
+
+    </script>
+</section>
+                </section>
+    
+          
+                
+                
+<section data-markdown  data-separator="^\n\^\^\n$" data-separator-vertical="^\^\n$">
+<script type="text/template">
+
+# ¡Let's go!
+
+^
+
+- Las listas numeradas como esta
+- están hechas
+- de dos
+- tags:
+    - ul (unordered list)
+    - li (list element)
+
+
+^
+
+```
+<ul>
+    <li>Primer elemento</li>
+    <li>Segundo elemento</li>
+</ul>
+```
+
+^
+
+## Primer ejemplo:
+
+![Hello World](hello_world.png)
+
+^
+
+http://jsbin.com/kitixo/edit?js,console
+
+^
+
+http://jsbin.com/cuyivep/edit?js,console,output
+
+
+^
+
+http://jsbin.com/zavuce/edit?js,output
+
+^
+
+http://jsbin.com/capara/edit?js,output
+
+
+^
+
+http://jsbin.com/nayutag/edit?js,output
+
+^
+
+http://jsbin.com/zawefi/edit?js,output
+
+
+^
+
+http://jsbin.com/dayulos/edit?js,output
+
+^
+
+http://jsbin.com/havahu/edit?js,output
+
+
+
+^^
+
+
+## Segundo ejemplo:
+        
+    
+![Interactive Scatterplot](interactive_scatterplot.gif)
+
+^
+
+http://jsbin.com/dicoci/edit?js,output
+
+^
+
+http://jsbin.com/xudeqo/edit?js,output
+
+^
+
+http://jsbin.com/zaleje/11/edit?js,output
+    
+    </script>
+</section>
+                    
+    
+                
+            
+            
+            </div>
+        </div>
+        
+		<script src="bower_components/headjs/dist/1.0.0/head.min.js"></script>
+        <script src="bower_components/reveal.js/js/reveal.js"></script>
+        
+        <script>
+            
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+                    
+					{ src: 'bower_components/marked/marked.min.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: "bower_components/reveal.js/plugin/markdown/markdown.js", condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: "bower_components/reveal.js/plugin/highlight/highlight.js", async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: "bower_components/reveal.js/plugin/notes/notes.js" }
+				]
+			});
+
+        </script>
+    </body>
+</html>
